@@ -27,3 +27,13 @@ diccionario.pop('nombre')
 diccionario_iterable = diccionario.items()
 
 
+verduras = {
+    'almidon' : "curva",
+    'verditos' : "hasta las diez de la mañana",
+    'junatos' : "poco a poco pude cruzar"
+}
+
+print (verduras.get('verditos'))
+verduras.pop('junatos')
+
+print (verduras)

@@ -23,3 +23,7 @@ if nombre == 'Lucio' and apellido == 'Carranza' and segundo_nombre== 'Nicolas':
 else: 
     print ('no sos mi hijo')    
 
+print ('---------------------------------')
+
+
+

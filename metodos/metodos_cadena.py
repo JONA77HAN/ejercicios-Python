@@ -41,8 +41,9 @@ empieza_con = cadena1.endswith ('H')
 cadena_nueva = cadena1.replace('hola', 'Roberto')
 
 #separar cadenas con la cadena que le pasemos
-cadena_separada = cadena1.split(",")
+cadena_separada = cadena1.split(" ")
 
 #print (cadena1)  
 
-print (cadena3.split())
+cadena4 = cadena3.split()
+print(f' ahora deberia aparecer esta : {cadena4} y acontecer todo lo demas')

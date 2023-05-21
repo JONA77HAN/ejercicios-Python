@@ -8,3 +8,4 @@ tupla = 'dato1','dato2'
 tupla = 'dato', #es importante y determinante la coma al final para crear la tupla
 
 print (tupla)
+

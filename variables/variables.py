@@ -36,3 +36,5 @@ oracion3 = f'a las {data_time} el dia esta muy {clima}'
 
 print('dia' not in oracion3)
 
+print('---------------------------------')
+print (f'las cosas pueden ser una verdadera fiest de cumpleaños cuando el clima esta {clima}')
