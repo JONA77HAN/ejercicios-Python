@@ -1,3 +1,8 @@
+#las tuplas van van con parentesis y repetimos   no pueden modificarse
+autos = ('chevy', 'reno', 'yeyo', 'audi')
+print (autos[2])
+print ('----------------------------------------------')
+
 lista = ["Jonathan Carranza", "Yasmin", True, 1.78]
 #datos q adentro tienen otros datos
 
@@ -12,7 +17,6 @@ tupla = ("Jonathan Carranza", "Yasmin", True, 1.78)
 print (tupla[3])  
 
 #creando un conjunto (set)
-
 conjunto = {"Jonathan Carranza", "Yasmin", True, 1.78}
 #no podemos modificar los elementos
 #no podemos acceder por un indice
@@ -55,4 +59,4 @@ dic = {
     'edad' : 50
 }
 
-print ()
+print (dic)
