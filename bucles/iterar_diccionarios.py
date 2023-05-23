@@ -1,7 +1,9 @@
 diccionario = {
     'nombre': 'lucas',
     'apellido': 'dalto',
-    'subs' : 1000000
+    'subs' : 1000000,
+    'animal' : 'perro',
+    'deporte' : 'futbol'
 }
 
 #recorriendo diccionario para obtener las claves
@@ -13,4 +15,6 @@ for key in diccionario:
 for datos in diccionario.items():
     key = datos [0]
     value = datos [1]
-    print (f'la clave es: {key} y el valor: {value}')    
+    print (f'la llave es: {key} y el valor: {value}')    
+
+
