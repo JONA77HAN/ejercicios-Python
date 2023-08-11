@@ -3,7 +3,6 @@ numeros = [10, 20, 55, 90]
 
 #recorriendo la lista animales
 for animal in animales :
-    animal = + f'a cada paso uno'
     print ( f'ahora la variable es igual a : {animal}')
 
 #recorriendo la lista num y multiplicando por 10
