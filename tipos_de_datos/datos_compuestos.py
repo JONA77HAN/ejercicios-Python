@@ -1,4 +1,4 @@
-#las tuplas van van con parentesis y repetimos   no pueden modificarse
+#las tuplas van con parentesis y repetimos   no pueden modificarse
 autos = ('chevy', 'reno', 'yeyo', 'audi')
 print (autos[2])
 print ('----------------------------------------------')
@@ -60,3 +60,5 @@ dic = {
 }
 
 print (dic)
+print (dic['nombre'])
+print(condimentos[0])
