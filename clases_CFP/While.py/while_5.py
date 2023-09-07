@@ -2,8 +2,8 @@
 # Pedir números hasta que se teclee uno negativo.
 # mostrar cuántos números se han introducido.
 
-num = ''
-contador = ''
+num = 0
+contador = 0
 
 while True :
     num = int(input('Ingrese un numero: '))
