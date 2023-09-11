@@ -11,6 +11,6 @@ while True:
     if es_par == 0:
         print ('es "par"')
     else:
-        print('es "impar"')
+        print('es "impar"') 
        
 
