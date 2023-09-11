@@ -4,8 +4,12 @@
 # start = 0
 # step = 1
 
-for f in range(0,22,2):
+for f in range(10):
+    print ('¿cual numero es?')
     print(f)
+    if f != 4:
+        print('llegamos hasta el numero cuatro')
+        
 
 range(1,5,2)
 1,3

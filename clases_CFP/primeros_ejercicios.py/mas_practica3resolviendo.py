@@ -7,7 +7,3 @@
 from random import randint
 
 
-numero = randint(10)
-
-print(numero)
-
