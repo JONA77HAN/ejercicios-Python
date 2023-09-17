@@ -1,5 +1,6 @@
 from random import randint
 
+#machine = croupier 
 puntaje_pc = 0
 
 while puntaje_pc < 17 :
@@ -14,6 +15,3 @@ if puntaje_pc > 21:
 else:
     print ('Croupier plantado con ' + str(puntaje_pc))
 
-
-        
-    
