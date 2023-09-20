@@ -1,25 +1,25 @@
-import random
+def hola():
+    print('Hola!')
+    print('Hola!!!')
+    print('Hola mundo!')
 
+hola()
 
-pregunta = str(input('Haz una pregunta... : '))
-print(pregunta)
+print('¿estas comodo?')
+longitud = len('yasmin')
+print (longitud)
 
-def divinacion(numRespuesta):
-    if numRespuesta == 1:
-        return 'Probablemente'
-    elif numRespuesta == 2:
-     return 'Tal vez'
-    elif numRespuesta == 3:
-     return 'Si'
-    elif numRespuesta == 4:
-     return 'Pregunta de nuevo más tarde'
-    elif numRespuesta == 5:
-     return 'No entendí la pregunta'
-    elif numRespuesta == 6:
-     return 'No'
-    elif numRespuesta == 7:
-     return 'Lo dudo mucho'
-r = random.randint(1, 7)
-fortuna = divinacion(r)
-print(fortuna)
+def hola(nombre):
+    print(f'Hola {nombre} como te fue en el cole?')
 
+hola('Lucio')
+
+def elegir(a, b, c):
+    if a > b and a > c:
+        print(f'el numero a es el mas alto')
+    elif b > c and b > a:
+        print(f'el numero mas alto es el b')
+    else:
+        print(f'c es el mas alto q ingresaste')
+
+elegir(151,2,522)
