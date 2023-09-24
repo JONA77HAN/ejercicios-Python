@@ -7,10 +7,3 @@
 # La funcion me devuelve 
 # 5040
 
-def factorial(n):
-    if n == 0:
-        return 'no existe el factorial de cero'
-    else:
-        return n * factorial(n - 1) 
-        
-print(factorial(21)) 
