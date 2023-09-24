@@ -10,7 +10,7 @@ def calcular(tipo, radio, altura):
     if tipo == 'a':
         area = round(2*3.14*altura, 2)
         print(f'el area es de {area}')
-    elif:
+    elif tipo == 'v':
         volumen = round(3.14*radio**2*altura, 2)
         print(f'el volumen es de {volumen}')
     else:
