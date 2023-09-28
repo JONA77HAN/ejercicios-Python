@@ -20,9 +20,17 @@ for i in range(10):
     num = int(input('ingresar numeros: '))
     lista.append(num)
 
-if lista[0] < lista[1] < lista[2] < lista[3] < lista[4] < lista[5] < lista[6] < lista[7] < lista[8] < lista[9]:
+for i in range(len(lista)-1):
+    if lista[1] > lista[i + 1]:
+        descendente = True
+    elif lista[i] < lista[i +1]:
+        ascendente = True
+    else:
+        desordenada = True
+
+if ascendente == True:
     print('numeros ingresados de forma ascendente')
-elif lista[0] > lista[1] > lista[2] > lista[3] > lista[4] > lista[5] > lista[6] > lista[7] > lista[8] > lista[9]:
-    print('numeros ingresados de forma descendente')    
+elif descendente == True:
+    print('numeros ingresados de forma descendente')
 else:
-    print('numeros ingresados de forma desordenada')
+    print('numeros ingresados de forma desordenada')        
