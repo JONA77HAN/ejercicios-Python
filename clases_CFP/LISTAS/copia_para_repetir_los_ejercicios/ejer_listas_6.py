@@ -1,36 +1,28 @@
-# Ejercicio 6: 
-# Leer por teclado una serie de 10 números enteros. 
-# La aplicación debe indicarnos si los números:  
-# están ordenados de forma creciente, decreciente, o si están desordenados.
-
-# [2,3,4,5,6,7,8,9,10,11] ->Ordenada Creciente
-# [5,4,3,2,1,1,1,1,1,1] ->Ordenada Decreciente
-# [1,3,5,8,6,4,9,20,1] ->Desordenada
-
 from random import randint
 
 lista = []
-"""
-for i in range(10):
-    num = randint(1,10)
-    lista.append(num)
-print(lista)    
-"""
-for i in range(10):
-    num = int(input('ingresar numeros: '))
+orden = ''
+
+for i in range(3):
+    num = randint(0, 3)  # Cambia el rango según tus necesidades
     lista.append(num)
 
-for i in range(len(lista)-1):
-    if lista[1] > lista[i + 1]:
-        descendente = True
-    elif lista[i] < lista[i +1]:
-        ascendente = True
-    else:
-        desordenada = True
+print(lista)
 
-if ascendente == True:
-    print('numeros ingresados de forma ascendente')
-elif descendente == True:
-    print('numeros ingresados de forma descendente')
+creciente = decreciente = True  # Inicialmente, asumimos que la lista está ordenada
+
+for i in range(len(lista) - 1):
+    if lista[i] > lista[i + 1]:
+        decreciente = False
+    elif lista[i] < lista[i + 1]:
+        creciente = False
+
+# Comprobamos el estado de ordenación
+if creciente:
+    orden = 'creciente'
+elif decreciente:
+    orden = 'decreciente'
 else:
-    print('numeros ingresados de forma desordenada')        
+    orden = 'desordenada'
+
+print('La lista quedó de forma ' + orden + '.')

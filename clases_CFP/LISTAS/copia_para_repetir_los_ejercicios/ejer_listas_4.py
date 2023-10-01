@@ -5,10 +5,8 @@
 # spam.insert(posicion,valor)
 
 from random import randint
-
 listaNum = []
 listaNumInversa = []
-
 c = 0
 for i in range(10):
 	c += 1
@@ -16,10 +14,10 @@ for i in range(10):
 	print(str(c) + ' --> Numero: '+str(num))
 	listaNum.append(num + c)
 print(listaNum)
-
 # Asi puedo llamar al ultimo lugar, al ultimo valor de la lista
-print(listaNum[-1])
-
 print('-'*25)
-
+for i in range(5):
+	print(listaNum[i])
+	print(listaNum[-1-i])
+	print('-'*25)
 
