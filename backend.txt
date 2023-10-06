@@ -1,0 +1,23 @@
+Internet es una red global de comunicaciones que conecta millones de dispositivos y computadoras en todo el mundo. Funciona mediante una serie de protocolos y tecnologías que permiten la transmisión de datos entre estos dispositivos de manera eficiente y segura. Aquí te proporcionaré una visión general de cómo funciona:
+
+1. **Dispositivos y usuarios**: Internet conecta dispositivos como computadoras, teléfonos inteligentes, tabletas, servidores y más. Estos dispositivos pueden ser tanto consumidores de información como proveedores de contenido.
+
+2. **Protocolo TCP/IP**: La base de Internet es el conjunto de protocolos TCP/IP (Protocolo de Control de Transmisión/Protocolo de Internet). Estos protocolos establecen cómo los datos se dividen en paquetes, se transmiten y se reensamblan en su destino. Cada dispositivo conectado a Internet tiene una dirección IP única que lo identifica en la red.
+
+3. **ISP (Proveedor de Servicios de Internet)**: Para acceder a Internet, los usuarios y las organizaciones se conectan a través de un ISP. Los ISP proporcionan la conectividad necesaria para que los dispositivos se comuniquen entre sí y con los servidores en todo el mundo.
+
+4. **Navegadores y servidores web**: Los navegadores web (como Chrome, Firefox, etc.) permiten a los usuarios acceder a contenido en Internet. Los servidores web son computadoras que almacenan y entregan sitios web y otros recursos a los usuarios. Cuando ingresas una dirección web en tu navegador, este solicita la página al servidor correspondiente.
+
+5. **Direcciones URL**: Las direcciones URL (Localizador Uniforme de Recursos) son como las direcciones de las páginas web en Internet. Contienen información sobre el protocolo a utilizar (como HTTP o HTTPS), la dirección IP del servidor y la ubicación específica del recurso en ese servidor.
+
+6. **DNS (Sistema de Nombres de Dominio)**: Los humanos recuerdan nombres de dominio (como www.ejemplo.com) más fácilmente que direcciones IP numéricas. El sistema DNS actúa como una guía telefónica de Internet, traduciendo nombres de dominio en direcciones IP. Cuando escribes una URL, tu computadora consulta un servidor DNS para obtener la dirección IP correspondiente.
+
+7. **Paquetes de datos**: Los datos se dividen en pequeños paquetes para su transmisión. Cada paquete contiene información sobre su destino, origen y secuencia. Estos paquetes viajan a través de la red de manera independiente y se reensamblan en el destino final.
+
+8. **Enrutadores y conmutadores**: Los enrutadores son dispositivos que dirigen los paquetes de datos por el camino más eficiente hacia su destino. Los conmutadores gestionan el tráfico en una red local. Juntos, ayudan a que los paquetes encuentren su camino a través de la red global.
+
+9. **Protocolo HTTP/HTTPS**: El Protocolo de Transferencia de Hipertexto (HTTP) y su versión segura (HTTPS) son protocolos utilizados para solicitar y enviar páginas web y otros recursos a través de Internet. HTTPS agrega una capa de cifrado para proteger la privacidad de los datos transmitidos.
+
+10. **Cifrado y seguridad**: Dado que Internet es una red pública, la seguridad es fundamental. El cifrado, como el utilizado en HTTPS, ayuda a proteger la información sensible durante la transmisión.
+
+En resumen, Internet es una red global que permite la comunicación y el intercambio de información entre dispositivos en todo el mundo utilizando una variedad de protocolos y tecnologías.
