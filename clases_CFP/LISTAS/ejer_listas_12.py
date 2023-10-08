@@ -8,40 +8,41 @@
 
 #Ejemplo de Lista:
 #libroNotas = [[6,8,5],[8,7,9],...,[6,6,6]]
-def calcular_promedio(trimestre):
-    total = sum(trimestre)
-    return total / len(trimestre)
 
-def main():
-    num_alumnos = 5
-    num_trimestres = 3
+alumno_notas = []
 
-    # Inicializar una lista vacía para almacenar las notas de todos los alumnos
-    libro_notas = []
+# genera libro de notas aleatoriamente
+from random import randint
+for f in range(5):
+  for i in range(3):
+      nota = randint(1, 10)
+      alumno_notas.append(nota)
+alumno_a = alumno_notas[:3]
+alumno_b = alumno_notas[3:6]
+alumno_c = alumno_notas[6:9]
+alumno_d = alumno_notas[9:12]    
+alumno_e = alumno_notas[12:]
+libro_notas = [alumno_a, alumno_d, alumno_c, alumno_d, alumno_d]
+print('Libro de Notas generado automaticamente: ')
+print(libro_notas)
+#mostrar nota promedio de cada trimestre
+suma_primer_trimestre = libro_notas[0][0] + libro_notas[1][0] + libro_notas[2][0] + libro_notas[3][0] + libro_notas[4][0]
+promedio_primer_trimestre = round(suma_primer_trimestre/5, 2)
+print('El promedio de los alumnos en el primer trimestre es ' + str(promedio_primer_trimestre))
 
-    # Leer las notas para cada alumno y cada trimestre
-    for i in range(num_alumnos):
-        notas_alumno = []
-        for j in range(num_trimestres):
-            nota = float(input(f"Ingrese la nota del alumno {i + 1} en el trimestre {j + 1}: "))
-            notas_alumno.append(nota)
-        libro_notas.append(notas_alumno)
+suma_segundo_trimestre = libro_notas[0][1] + libro_notas[1][1] + libro_notas[2][1] + libro_notas[3][1] + libro_notas[4][1]
+promedio_segundo_trimestre = round(suma_segundo_trimestre/5, 2)
+print('El promedio en el segundo ' + str(promedio_segundo_trimestre))  
 
-    # Calcular el promedio del grupo en cada trimestre
-    promedios_trimestres = [calcular_promedio([notas[i] for notas in libro_notas]) for i in range(num_trimestres)]
+suma_tercer_trimestre = libro_notas[0][2] + libro_notas[1][2] + libro_notas[2][2] + libro_notas[3][2] + libro_notas[4][2]
+promedio_tercer_trimestre = round(suma_tercer_trimestre/5, 2)
+print('Y durante el tercer trimestre ' + str(promedio_tercer_trimestre))
 
-    # Mostrar los promedios de cada trimestre
-    for i, promedio in enumerate(promedios_trimestres):
-        print(f"Promedio del trimestre {i + 1}: {promedio}")
+# y el promedio del alumno que se encuentra en la posición N (N se lee por teclado).
 
-    # Calcular el promedio del alumno en una posición específica (N)
-    n = int(input("Ingrese la posición del alumno cuyo promedio desea calcular (1-5): ")) - 1
 
-    if 0 <= n < num_alumnos:
-        promedio_alumno_n = calcular_promedio(libro_notas[n])
-        print(f"Promedio del alumno en la posición {n + 1}: {promedio_alumno_n}")
-    else:
-        print("La posición ingresada no es válida.")
 
-if __name__ == "__main__":
-    main()
+
+    
+
+
