@@ -1,11 +1,10 @@
 #Ejercicio3. Ídem una versión que calcule el máximo de 3 números.
 
-def maximo(m, n, o):
-    if m > n and m > o:
-        print(f'el mas grande es {m}')
-    elif n > o and n > m:
-        print(f'el mas grande es {n}')
+def maximos (m, n, ñ):
+    if m > n and m > ñ:
+        print('el maximo el primero')
+    elif n > m and n > ñ:
+        print('el segundo ingresado es el maximo')
     else:
-        print(f'el mas grande es {o}')
-
-maximo(11,1011,54)
+        print('el maximo es el ultimo')
+maximos(10103, 5500, 600)            
