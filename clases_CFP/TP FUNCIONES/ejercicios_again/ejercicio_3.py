@@ -2,7 +2,7 @@
 
 def maximos (m, n, ñ):
     if m > n and m > ñ:
-        print('el maximo el primero')
+        print('el maximo es el primero')
     elif n > m and n > ñ:
         print('el segundo ingresado es el maximo')
     else:
