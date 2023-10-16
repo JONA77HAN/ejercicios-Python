@@ -17,6 +17,6 @@ b) El programa debe poder calcular el puntaje de cada jugador dependiendo de qu�
  Torres valen 5 puntos 
  Reinas valen 9 puntos 
  Reyes valen 4 puntos
-c) El programa debe poder reconocer cuando un Rey está en jaque. Como no todo el mundo conoce las reglas de Ajedrez, en este ejercicio diremos que el Rey está en jaque cuando 2 piezas del otro equipo se encuentran adyacentes al Rey.
+c) El programa debe poder reconocer cuando un Rey está en jaque. diremos que el Rey está en jaque cuando 2 piezas del otro equipo se encuentran adyacentes al Rey.
 
 """
