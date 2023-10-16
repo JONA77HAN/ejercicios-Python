@@ -19,24 +19,45 @@ def tablero(): #funcion que define el tablero en blanco
     print('1 -   '+ str(A1) +'   '+ str(B1) +'   '+ str(C1) +'   '+ str(D1) +'   '+ str(E1) +'   '+ str(F1) +'   '+ str(G1) +'   '+ str(H1))
     print('     -------------------------------')
     print('      A   B   C   D   E   F   G   H')
-tablero() #la mostramos en pantalla
-
+# la mostramos en pantalla
+tablero() 
+# Define las cantidades para cada pieza  --> blancas:
+peon_blanco = randint(0, 8)
+caballo_blanco = randint(0, 2)
+alfil_blanco = randint(0, 2)
+torre_blanca = randint(0, 2)
+reina_blanca = randint(0, 1)
+rey_blanco = 1
+# Negras: 
+peon_negro = randint(0, 8)
+caballo_negro = randint(0, 2)
+alfil_negro = randint(0, 2)
+torre_negra = randint(0, 2)
+reina_negra = randint(0, 1)
+rey_negro = 1
 # asignamos los valores de cada pieza
 puntos_de_cada_pieza = {
-    '♟' : 1,
-    '♙' : 1,
-    '♞' : 3,
-    '♘' : 3,
-    '♝' : 3,
-    '♗' : 3,
-    '♜' : 5,
-    '♖' : 5,
-    '♛' : 9,
-    '♕' : 9,
-    '♚' : 4,
-    '♔' : 4
+    '♟' : peon_blanco*1,
+    '♙' : peon_negro*1,
+    '♞' : caballo_blanco*3,
+    '♘' : caballo_negro*3,
+    '♝' : alfil_blanco*3,
+    '♗' : alfil_negro*3,
+    '♜' : torre_blanca*5,
+    '♖' : torre_negra*5,
+    '♛' : reina_blanca*9,
+    '♕' : reina_negra*9,
+    '♚' : rey_blanco*4,
+    '♔' : rey_negro*4
 }
+#para corroborar el puntaje y la cantidad de piezas
+print(caballo_blanco)
+print(puntos_de_cada_pieza)
 
-# Armamos el tablero aleatoriamente
-
-
+#calculemos los puntos de cada jugador
+puntos_jugador_blancas = peon_blanco+caballo_blanco*3+alfil_blanco*3+torre_blanca*5+reina_blanca*9+rey_blanco*4
+puntos_jugador_negras = peon_negro+caballo_negro*3+alfil_negro*3+torre_negra*5+reina_negra*9+rey_negro*4
+print(puntos_jugador_blancas)
+# Y mostremoslo en pantalla
+print('el jugador de piezas blancas tiene ' + str(puntos_jugador_blancas)+' puntos')
+print('Y el de piezas negras '+str(puntos_jugador_negras)+ ' puntos' )
