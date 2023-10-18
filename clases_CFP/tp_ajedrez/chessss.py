@@ -1,46 +1,48 @@
-from random import randint, choice
+import random
 
-# Inicializa el tablero vacío
-chess_board = [[' ' for _ in range(8)] for _ in range(8)]
+# Define las cantidades para cada pieza
+# Transformando los números en piezas
+# Blancas:
+peon_blanco = ['♟'] * random.randint(0, 8)
+caballo_blanco = ['♞'] * random.randint(0, 2)
+alfil_blanco = ['♝'] * random.randint(0, 2)
+torre_blanca = ['♜'] * random.randint(0, 2)
+reina_blanca = ['♛'] * random.randint(0, 1)
+rey_blanco = ['♚']
 
-# Define las piezas y sus valores
-pieces = ['♔', '♕', '♖', '♗', '♘', '♙', '♚', '♛', '♜', '♝', '♞', '♟']
-piece_values = {
-    '♔': 4, '♕': 9, '♖': 5, '♗': 3, '♘': 3, '♙': 1,
-    '♚': -4, '♛': -9, '♜': -5, '♝': -3, '♞': -3, '♟': -1
-}
+# Negras:
+peon_negro = ['♙'] * random.randint(0, 8)
+caballo_negro = ['♘'] * random.randint(0, 2)
+alfil_negro = ['♗'] * random.randint(0, 2)
+torre_negra = ['♖'] * random.randint(0, 2)
+reina_negra = ['♕'] * random.randint(0, 1)
+rey_negro = ['♔']
 
-# Genera cantidades aleatorias de piezas
-peones = randint(0, 8)
-caballos = randint(0, 2)
-alfiles = randint(0, 2)
-torres = randint(0, 2)
-reina = randint(0, 1)
-rey = 1
+# Piezas que habrá en el tablero
+piezas_en_el_tablero = (
+    peon_blanco + caballo_blanco + alfil_blanco + torre_blanca + reina_blanca + rey_blanco +
+    peon_negro + caballo_negro + alfil_negro + torre_negra + reina_negra + rey_negro
+)
 
-# Combina las piezas en una lista
-pieces_list = ['♙'] * peones + ['♘'] * caballos + ['♗'] * alfiles + ['♖'] * torres + ['♕'] * reina + ['♔'] * rey
+# Mezcla las piezas aleatoriamente
+random.shuffle(piezas_en_el_tablero)
 
-# Coloca piezas aleatoriamente en el tablero
-for piece in pieces_list:
-    while True:
-        row = randint(0, 7)
-        col = randint(0, 7)
-        if chess_board[row][col] == ' ':
-            chess_board[row][col] = piece
-            break
+# Define el tablero como una lista 2D
+tablero = [[' '] * 8 for _ in range(8)]
 
-# Imprime el tablero con las piezas
-print('     -------------------------------')
+# Llena el tablero con las piezas
 for i in range(8):
-    row_str = f'{8 - i} -   ' + '   '.join(chess_board[i]) + '   ' + str(8 - i)
-    print(row_str)
-print('     -------------------------------')
-print('      A   B   C   D   E   F   G   H')
+    for j in range(8):
+        tablero[i][j] = piezas_en_el_tablero.pop(0)
 
-# Calcula el puntaje de cada jugador
-score_white = sum(piece_values[piece] for row in chess_board for piece in row if piece in piece_values and piece.isupper())
-score_black = sum(piece_values[piece] for row in chess_board for piece in row if piece in piece_values and piece.islower())
+# Función para imprimir el tablero con las fichas asignadas
+def imprimir_tablero():
+    print('     -------------------------------')
+    for i in range(8):
+        fila = ' '.join(tablero[i])
+        print(f'{8 - i} -   {fila}')
+    print('     -------------------------------')
+    print('      A   B   C   D   E   F   G   H')
 
-print(f'Puntaje del jugador blanco: {score_white}')
-print(f'Puntaje del jugador negro: {score_black}')
+# Llama a la función para imprimir el tablero
+imprimir_tablero()

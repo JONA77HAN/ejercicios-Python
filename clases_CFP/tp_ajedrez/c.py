@@ -22,7 +22,7 @@ def tablero(): #funcion que define el tablero en blanco
 # la mostramos en pantalla
 tablero() 
 # Define las cantidades para cada pieza  --> blancas:
-peon_blanco = randint(0, 8)
+peon_blanco = int(randint(0, 8))
 caballo_blanco = randint(0, 2)
 alfil_blanco = randint(0, 2)
 torre_blanca = randint(0, 2)
@@ -35,6 +35,11 @@ alfil_negro = randint(0, 2)
 torre_negra = randint(0, 2)
 reina_negra = randint(0, 1)
 rey_negro = 1
+#Pongamos las fichas en el tablero:
+
+
+
+# Sacando el puntaje de cada jugador: ------>
 # asignamos los valores de cada pieza
 puntos_de_cada_pieza = {
     '♟' : peon_blanco*1,
@@ -61,3 +66,16 @@ print(puntos_jugador_blancas)
 # Y mostremoslo en pantalla
 print('el jugador de piezas blancas tiene ' + str(puntos_jugador_blancas)+' puntos')
 print('Y el de piezas negras '+str(puntos_jugador_negras)+ ' puntos' )
+
+pieces = ['♔', '♕', '♖', '♗', '♘', '♙', '♚', '♛', '♜', '♝', '♞', '♟']
+
+
+# Define las variables para las posiciones de las fichas
+A8, B8, C8, D8, E8, F8, G8, H8 = piezas_en_el_tablero[0:8]
+A7, B7, C7, D7, E7, F7, G7, H7 = piezas_en_el_tablero[8:16]
+A6, B6, C6, D6, E6, F6, G6, H6 = piezas_en_el_tablero[16:24]
+A5, B5, C5, D5, E5, F5, G5, H5 = piezas_en_el_tablero[24:32]
+A4, B4, C4, D4, E4, F4, G4, H4 = piezas_en_el_tablero[32:40]
+A3, B3, C3, D3, E3, F3, G3, H3 = piezas_en_el_tablero[40:48]
+A2, B2, C2, D2, E2, F2, G2, H2 = piezas_en_el_tablero[48:56]
+A1, B1, C1, D1, E1, F1, G1, H1 = piezas_en_el_tablero[56:64]
