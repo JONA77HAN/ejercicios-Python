@@ -60,7 +60,15 @@ A4, B4, C4, D4, E4, F4, G4, H4,
 A3, B3, C3, D3, E3, F3, G3, H3, 
 A2, B2, C2, D2, E2, F2, G2, H2, 
 A1, B1, C1, D1, E1, F1, G1, H1, 
-]
-# Hacer una lista con el contenido de los A1, A2 etc
-
+]# Hacer una lista con el contenido de los A1, A2 etc
 print(lugares_en_el_tablero)
+
+# Mezcla las piezas aleatoriamente
+random.shuffle(piezas_en_el_tablero)
+
+# Itera a través de las variables de posición y asigna las piezas aleatorias
+for i in range(len(lugares_en_el_tablero)):
+    lugares_en_el_tablero[i] = piezas_en_el_tablero[i]
+
+# Llama a la función para imprimir el tablero con las piezas asignadas aleatoriamente
+tablero()
