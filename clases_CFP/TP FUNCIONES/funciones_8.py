@@ -12,8 +12,3 @@ def decimal_a_binario(n) :
     print('el numero en binario es : '+ str(sum))
 
 n = int(input('ingrese un numero: ')) 
-
-decimal_a_binario(n)
-
-
-

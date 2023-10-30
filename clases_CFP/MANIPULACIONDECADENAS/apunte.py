@@ -6,3 +6,4 @@ print('''Querida Alicia,
 El gato de Eva ha sido arrestado por secuestro, robo y extorsión.
 Sinceramente,
 Roberto''')
+print('hola ciudadanos\nque hace esto')
