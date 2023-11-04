@@ -1,3 +1,4 @@
 spam = 'SpamSpamCerdoSpamHuevosSpamSpam'
-spam.strip('ampS')
-print(spam)
+print(spam.strip('ampS'))
+pollo = 'laskikicosaskikiquekikiquierokikisonkikimikikifamilia'
+print(pollo.strip('kiki'))
