@@ -12,3 +12,9 @@ while True:
    if password.isalnum():
     break
    print('La contraseña solo puede tener letras y números')
+
+while True:
+  contraseña_nueva = input('ingrese una contraseña alfanumerica')
+  if contraseña_nueva.isalnum():
+    break
+  print('ingrese una contraseña con caracteres alfanumericos')
