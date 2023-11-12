@@ -32,7 +32,7 @@ def guardar_examen(numero, examen):
     with open(nombre_archivo, 'w') as archivo:
         for i, pregunta in enumerate(examen, 1):
             archivo.write(f"Pregunta {i}: {pregunta[0]}\n")
-            for j, opcion in enumerate(preguntas[pregunta[0][16:-1]], 1):
+            for j, opcion in enumerate(preguntas[pregunta[0][16:]], 1):
                 archivo.write(f"{string.ascii_uppercase[j - 1]}. {opcion}\n")
             archivo.write("\n")
 

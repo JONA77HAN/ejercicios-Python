@@ -1,0 +1,62 @@
+Examen 20 de matemáticas básicas
+
+Pregunta 1: ¿Cuánto es 10 x 5?
+   1. 55
+   2. 50
+   3. 45
+   4. 40
+
+Pregunta 2: ¿Cuánto es 20 - 7?
+   1. 10
+   2. 15
+   3. 13
+   4. 12
+
+Pregunta 3: ¿Cuánto es 18 / 3?
+   1. 4
+   2. 5
+   3. 6
+   4. 7
+
+Pregunta 4: ¿Cuánto es 5 + 9?
+   1. 13
+   2. 14
+   3. 12
+   4. 15
+
+Pregunta 5: ¿Cuánto es 4 * 6 - 5?
+   1. 15
+   2. 21
+   3. 19
+   4. 14
+
+Pregunta 6: ¿Cuánto es 7 x 8?
+   1. 49
+   2. 60
+   3. 56
+   4. 48
+
+Pregunta 7: ¿Cuánto es 9 + 17?
+   1. 27
+   2. 25
+   3. 24
+   4. 26
+
+Pregunta 8: ¿Cuánto es 3^2?
+   1. 9
+   2. 6
+   3. 12
+   4. 5
+
+Pregunta 9: ¿Cuánto es 12 / 4?
+   1. 5
+   2. 4
+   3. 3
+   4. 2
+
+Pregunta 10: ¿Cuánto es 11 - 8?
+   1. 5
+   2. 4
+   3. 2
+   4. 3
+
