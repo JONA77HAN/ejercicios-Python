@@ -1,8 +1,9 @@
-#Ejercicio3. Escribir un programa que lea una cadena y devuelva un diccionario con la cantidad de veces que aparece cada carácter en la cadena.
+# Ejercicio3. Escribir un programa que lea una cadena y devuelva un diccionario 
+# con la cantidad de veces que aparece cada carácter en la cadena.
 
-#Ejemplo:
-#Ingreso casa
-#muestro {'c':1,'a':2,'s':1}
+# Ejemplo:
+# Ingreso casa
+# muestro {'c':1,'a':2,'s':1}
 
 def cantidad_letras(cadena):
 	caracter= {}

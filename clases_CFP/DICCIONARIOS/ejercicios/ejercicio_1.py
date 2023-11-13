@@ -8,8 +8,7 @@
 # Y los valores de cada clave es la clave al cuadrado.
 
 dic = {}
-
-N = int(input('Ingrese un Numero: \n'))
-for i in range(1, N + 1):
+N = int(input('Ingrese un numero: \n'))
+for i in range(1, N+1):
     dic[i] = i**2
-print(dic)
+print(dic)    
