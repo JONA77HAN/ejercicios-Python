@@ -9,5 +9,15 @@
 # Le paso 8
 # Devuelve "No es primo"/False
 
+def primo (n) :
+	for i in range(2,n):#2,3,4,5,6,7,8,9
+		if n % i == 0:
+			return False 
+	return True
+n=int(input('Ingrese: \n '))
+if primo(n):
+	print('El numero es primo')
+else:
+	print('El numero no es primo')
 
 
