@@ -6,4 +6,12 @@ dirSoneto = 'clases_CFP/ARCHIVOS/archivos/la_razon_que_te_demora.txt'
 arcSoneto = open(dirSoneto)
 contSoneto = arcSoneto.readlines()
 arcSoneto.close()
-print(contSoneto)
+
+opcion = input('(U)ltimas o (P)rimeras: ')[0].lower()
+nroLineas = int(input('Cant Lineas: '))
+if opcion == 'u':
+	for linea in contSoneto[-nroLineas:]:
+		print(linea,end='')
+else:
+	for linea in contSoneto[:nroLineas]:
+		print(linea,end='')
