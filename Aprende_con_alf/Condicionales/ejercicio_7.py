@@ -25,4 +25,4 @@ elif renta < 60000:
 else:
     tipo = 45
 # Mostrar por pantalla el producto de la renta por el tipo impositivo
-print("Tienes que pagar ", renta * tipo / 100, "€", sep='')
+print(f'Tu renta es de {tipo*renta/100}')
