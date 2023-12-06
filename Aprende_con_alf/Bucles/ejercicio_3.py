@@ -7,7 +7,7 @@
 N = int(input('ingrese un numero entero y positivo: '))
 for i in range(1, N+1, 2):
     print(i, end=', ')
-    continue
+   
 # Numeros pares
 n = int(input('Ingrese un numero enteo y positivo: '))
 for i in range(0, n+1, 2):
