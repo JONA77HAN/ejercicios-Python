@@ -6,7 +6,8 @@
 lista = []
 materia =''
 
-while materia != 'stop': 
-    materia = input('ingresa la materia: ')
+while materia != 'stop':
+    materia = input('Ingresa la materia: ')
     lista.append(materia)
     print(lista)
+

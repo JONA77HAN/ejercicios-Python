@@ -6,7 +6,5 @@
 
 asignaturas = ['Matemáticas', 'Física', 'Química', 'Historia', 'Lengua']
 
-for i in range(len(asignaturas)):
-    print('Yo estudio ' + str(asignaturas[i]))
-
-
+for estudio in asignaturas:
+    print (f'yo estudio {estudio}')
