@@ -13,3 +13,6 @@ for numero in numeros_ganadores:
 ordenados = numeros_ganadores.sort()
 
 print(ordenados)
+
+
+
