@@ -2,17 +2,12 @@
 # Escribir un programa que pregunte al usuario los números ganadores de la lotería primitiva, 
 # los almacene en una lista y los muestre por pantalla ordenados de menor a mayor.
 
-numeros_ganadores = []
-numero = ''
+loteria = []
 
-for numero in numeros_ganadores:
-    numero = int(input('ingrese el numero ganador: '))
-    numeros_ganadores.append(numero)
-    print(numeros_ganadores)
-
-ordenados = numeros_ganadores.sort()
-
-print(ordenados)
-
+for numero in range(6):
+    numero = int(input('Ingrese el numero ganador: '))
+    loteria.append(numero)
+loteria.sort()
+print(f'Los numeros ganadores de la loteria en orden son: {loteria}')    
 
 
