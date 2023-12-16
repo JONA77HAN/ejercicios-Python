@@ -11,3 +11,4 @@ if word == reversed_word:
     print("Es un palíndromo")
 else:
     print("No es un palíndromo")
+    
