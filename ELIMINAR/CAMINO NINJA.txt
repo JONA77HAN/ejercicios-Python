@@ -1,0 +1,36 @@
+paginas q puedo utilizar:
+00:55 Wix
+02:16 Squarespace
+03:51 Site123
+04:54 Zyro
+06:22 Wordpress++
+---------------------------------------------------------
+SASS+
+
+react****
+
+next.js****
+
+tailwind
+
+.NET+
+
+bootstrap y tailwind
+
+JS****
+
+APIS++
+
+jQuery+
+
+Typéscript
+
+ANGULAR++ / REACT
+
+JAVA+
+
+php+
+
+sql
+
+PYTHON+++++ / DJANGO
