@@ -11,3 +11,11 @@ while materia != 'stop':
     lista.append(materia)
     print(lista)
 
+lista2 = []
+comidas = ''
+
+while comidas != 'stop':
+    comidas = input('agrega una comida a la lista')
+    lista2.append(comidas)
+    print(lista2)
+
